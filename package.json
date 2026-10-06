@@ -1,0 +1,28 @@
+{
+  "name": "ubikate-core",
+  "version": "1.0.0",
+  "description": "Ubikate: plataforma que puntúa viviendas de Madrid con 4 ejes usando Open Data oficial.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "ubikate",
+    "madrid",
+    "open-data",
+    "express",
+    "mariadb"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "mysql2": "^3.24.5"
+  }
+}
