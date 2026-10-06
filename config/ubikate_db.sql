@@ -1,5 +1,7 @@
-CREATE DATABASE IF NOT EXISTS ubikate;
-USE ubikate;
+CREATE DATABASE IF NOT EXISTS ubikate_db
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_spanish_ci;
+USE ubikate_db;
 CREATE TABLE DISTRITO (
     id_distrito INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100),
