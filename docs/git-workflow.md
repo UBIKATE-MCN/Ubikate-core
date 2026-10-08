@@ -2,13 +2,16 @@
 
 Objetivo: que el historial de commits sea **activo y colaborativo**: que se vea el trabajo de los tres integrantes, en pasos pequeños y con mensajes claros.
 
+## Regla principal
+
+**Está prohibido hacer commit o push directamente en `main`.** Todo cambio entra mediante una rama propia y un *Pull Request* revisado por otro integrante.
+
 ## Ramas
 
 | Rama | Uso |
 |---|---|
-| `main` | Versión estable. Es la que se despliega. Solo se llega aquí mediante *Pull Request*. |
-| `develop` | Integración del trabajo del equipo. |
-| `feature/<tema>` | Una rama por tarea, creada desde `develop` (p. ej. `feature/modelo-poo`, `feature/readme`, `feature/api-aire`). |
+| `main` | Versión estable. Es la que se despliega. Solo recibe cambios mediante *Pull Request*. |
+| `feature/<tema>` | Una rama por tarea, creada desde `main` (p. ej. `feature/modelo-poo`, `feature/diseno-figma`, `feature/despliegue-render`). |
 
 ## Mensajes de commit
 
@@ -22,23 +25,23 @@ Formato: `tipo: descripción corta en presente`
 | `docs` | Documentación (README, /docs) |
 | `chore` | Configuración, dependencias, estructura |
 
-Ejemplos: `refactor: Vivienda referencia a objeto Distrito en lugar de id`, `docs: añade guía de instalación al README`, `chore: añade .env.example y .gitignore`.
+Ejemplos: `refactor: Vivienda referencia a objeto Distrito en lugar de id`, `docs: añade guía de instalación`, `chore: añade .env.example y .gitignore`.
 
 ## Cómo trabaja cada persona
 
 ```bash
-git checkout develop
+git checkout main
 git pull
 git checkout -b feature/nombre-de-la-tarea
 
 # ... trabajar, y hacer commits pequeños y frecuentes ...
 git add <archivos>
-git commit -m "feat: descripción"
+git commit -m "docs: descripción"
 
 git push -u origin feature/nombre-de-la-tarea
 ```
 
-Después se abre un **Pull Request** hacia `develop` en GitHub y **otro integrante lo revisa** antes de hacer *merge*. Cuando `develop` está estable, se hace Pull Request de `develop` a `main`.
+Después, en GitHub se abre un **Pull Request** de `feature/nombre-de-la-tarea` hacia `main`, se asigna a **otro integrante como revisor** y, cuando lo aprueba, se hace *merge*. Para seguir trabajando: `git checkout main` y `git pull`.
 
 ## Reglas del equipo
 
