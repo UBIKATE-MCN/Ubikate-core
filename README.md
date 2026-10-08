@@ -50,6 +50,7 @@ ubikate-core/
 │   ├── db.js             # Conexión a MariaDB (pool mysql2)
 │   └── ubikate_db.sql    # Script de creación de la base de datos
 ├── docs/                 # Documentación del proyecto
+│   ├── guia-instalacion.md # Guía rápida de instalación y despliegue local
 │   ├── git-workflow.md   # Flujo de ramas y commits
 │   ├── troubleshooting.md# Registro de problemas y soluciones
 │   └── img/              # Capturas de evidencias
@@ -62,6 +63,8 @@ ubikate-core/
 ---
 
 ## 4. Instalación paso a paso
+
+> Versión resumida para el equipo: [`docs/guia-instalacion.md`](docs/guia-instalacion.md).
 
 ### 4.1 Clonar el repositorio e instalar dependencias
 
@@ -154,7 +157,7 @@ Los ids (`id_distrito`, `id_vivienda`...) pertenecen a la base de datos relacion
 
 ## 7. Flujo de trabajo en Git
 
-Ramas, convención de commits y reparto de trabajo en [`docs/git-workflow.md`](docs/git-workflow.md).
+**Ningún commit ni push directo a `main`:** una rama `feature/...` por tarea y Pull Request revisado por otro integrante. Ramas y convención de commits en [`docs/git-workflow.md`](docs/git-workflow.md).
 
 ## 8. Problemas conocidos
 
