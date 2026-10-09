@@ -33,6 +33,16 @@ Este repositorio contiene el **backend** (Node.js + Express), el modelo de clase
 **Hardware recomendado:** CPU de 4 núcleos, 16 GB de RAM y SSD.
 **Sistemas probados:** Windows 10/11 (también válido en macOS y Ubuntu).
 
+### Requisitos mínimos de ejecución y estado del despliegue
+| Aspecto | Detalle |
+|---|---|
+| Sistema operativo | Windows 10/11 (también macOS y Ubuntu) |
+| Navegador | Cualquiera actual (Chrome, Edge, Firefox) para consultar la API |
+| Conexión a Internet | Necesaria para `npm install` y para consultar el Open Data del Ayuntamiento de Madrid |
+| Dependencias | Node.js 22+, npm y XAMPP (MariaDB); ver `package.json` |
+| URL pública | Ninguna por ahora (no está publicado) |
+| Estado del despliegue | En desarrollo: se ejecuta en entorno local (`http://localhost:5000`) |
+
 ---
 
 ## 3. Estructura del repositorio
