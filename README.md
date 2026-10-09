@@ -162,6 +162,7 @@ Las relaciones entre clases se modelan con **referencias a objetos**, no con ids
 - `Calculadora4ejes.procesarDatos(distrito: Distrito)` recibe el objeto completo.
 
 Los ids (`id_distrito`, `id_vivienda`...) pertenecen a la base de datos relacional y solo se usan al guardar y leer. Como `Vivienda` y `Distrito` se referencian entre sí, cada clase define `toJSON()` para poder serializarlas sin referencias circulares (y `Usuario` nunca expone la contraseña).
+[Diagrama UML corregido](docs/img/UML.png)
 
 ---
 

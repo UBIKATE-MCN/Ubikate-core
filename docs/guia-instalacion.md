@@ -67,6 +67,7 @@ npm start
 | `http://localhost:5000/api/health/db` | `{"status":"ok","database":"connected"}` (si da 503, revisa el `.env` y que MySQL esté iniciado) |
 
 Comprueba además en phpMyAdmin que dentro de **`ubikate_db`** aparecen las tablas `DISTRITO`, `VIVIENDA`, `USUARIO`, `USUARIO_FAVORITOS` y `DATOS_MUNICIPIO`. (`/api/health/db` solo comprueba la conexión, no que existan las tablas.)
+![Evidencia de conexión con la Base de Datos](img/health-db-status.png)
 
 ## 6. Normas de trabajo en Git
 
