@@ -13,11 +13,9 @@ Este repositorio contiene el **backend** (Node.js + Express), el modelo de clase
 | Pieza | Uso en Ubikate | Por qué |
 |---|---|---|
 | **Node.js + Express** | Backend / API REST | E/S no bloqueante: permite consultar varias APIs externas a la vez sin bloquear el hilo principal. |
-| **React + Vite** | Frontend (mapa y 4 ejes) | Interfaz por componentes; el mapa y los colores de los ejes se actualizan sin recargar la página. *(Pendiente de incorporar al repositorio.)* |
+| **React + Vite** | Frontend (mapa y 4 ejes) | Interfaz por componentes; el mapa y los colores de los ejes se actualizan sin recargar la página.   
 | **MariaDB (MySQL) + XAMPP** | Base de datos relacional | Motor **InnoDB**: claves foráneas e integridad referencial entre viviendas, usuarios y distritos. |
-| **Postman** | Pruebas de API | Inspeccionar cabeceras, validar el JSON y medir latencia del portal de datos abiertos antes de programar la lógica. |
-| **VS Code + Live Share** | Desarrollo | Trabajo colaborativo síncrono entre los tres integrantes. |
-| **GitHub + Render** | Control de versiones y despliegue | Cada cambio en `main` puede lanzar un despliegue automático en Render. |
+| **GitHub + Render** | Control de versiones y despliegue | Entorno local de desarrollo. Despliegue en la nube (Render) previsto para fases posteriores, ya que la base de datos actual no es accesible desde el exterior. |
 
 ---
 
