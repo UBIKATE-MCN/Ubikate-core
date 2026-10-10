@@ -7,6 +7,7 @@ Solo se documentan problemas que **realmente ocurrieron** durante el desarrollo,
 | # | Problema | Causa | Solución | Evidencia |
 |---|---|---|---|---|
 | 1 | MySQL no arranca en XAMPP: `Port 3306 in use by "Unable to open process"!` | El puerto 3306 estaba ocupado por otro proceso del sistema operativo. | Cambiar el puerto de MariaDB a 3307 en `my.ini`. | [Captura](img/xampp-puerto-3307.png) |
+| 2 | `npm : No se puede cargar el archivo ...\npm.ps1 porque la ejecución de scripts está deshabilitada en este sistema` | La política de ejecución de PowerShell bloquea los scripts, y `npm` se lanza con un script `.ps1`. | `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` | Salida de la terminal (ver sección 2) |
 
 ---
 
@@ -28,6 +29,29 @@ or reconfigure MySQL and the Control Panel to listen on a different port
 **Resultado.** MySQL arranca en verde y escucha en el puerto 3307:
 
 ![XAMPP con MySQL en el puerto 3307](img/xampp-puerto-3307.png)
+
+---
+
+## 2. `npm` bloqueado por la política de ejecución de PowerShell
+
+**Síntoma.** Al ejecutar `npm -v` en la terminal de VS Code (PowerShell), `git` y `node` funcionaban pero `npm` fallaba con:
+
+```
+npm : No se puede cargar el archivo D:\Program Files\nodejs\npm.ps1 porque la ejecución
+de scripts está deshabilitada en este sistema.
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+```
+
+**Causa.** La política de ejecución de scripts de PowerShell estaba restringida y `npm` se invoca mediante el script `npm.ps1`.
+
+**Solución.** Permitir scripts firmados localmente, solo para el usuario actual (sin necesidad de ser administrador):
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+**Resultado.** `npm -v` devuelve la versión (`11.19.0`) y `npm install` / `npm start` funcionan con normalidad.
 
 ---
 

@@ -33,6 +33,16 @@ Este repositorio contiene el **backend** (Node.js + Express), el modelo de clase
 **Hardware recomendado:** CPU de 4 núcleos, 16 GB de RAM y SSD.
 **Sistemas probados:** Windows 10/11 (también válido en macOS y Ubuntu).
 
+### Requisitos mínimos de ejecución y estado del despliegue
+| Aspecto | Detalle |
+|---|---|
+| Sistema operativo | Windows 10/11 (también macOS y Ubuntu) |
+| Navegador | Cualquiera actual (Chrome, Edge, Firefox) para consultar la API |
+| Conexión a Internet | Necesaria para `npm install` y para consultar el Open Data del Ayuntamiento de Madrid |
+| Dependencias | Node.js 22+, npm y XAMPP (MariaDB); ver `package.json` |
+| URL pública | Ninguna por ahora (no está publicado) |
+| Estado del despliegue | En desarrollo: se ejecuta en entorno local (`http://localhost:5000`) |
+
 ---
 
 ## 3. Estructura del repositorio
@@ -50,6 +60,7 @@ ubikate-core/
 │   ├── db.js             # Conexión a MariaDB (pool mysql2)
 │   └── ubikate_db.sql    # Script de creación de la base de datos
 ├── docs/                 # Documentación del proyecto
+│   ├── guia-instalacion.md # Guía rápida de instalación y despliegue local
 │   ├── git-workflow.md   # Flujo de ramas y commits
 │   ├── troubleshooting.md# Registro de problemas y soluciones
 │   └── img/              # Capturas de evidencias
@@ -62,6 +73,8 @@ ubikate-core/
 ---
 
 ## 4. Instalación paso a paso
+
+> Versión resumida para el equipo: [`docs/guia-instalacion.md`](docs/guia-instalacion.md).
 
 ### 4.1 Clonar el repositorio e instalar dependencias
 
@@ -149,12 +162,13 @@ Las relaciones entre clases se modelan con **referencias a objetos**, no con ids
 - `Calculadora4ejes.procesarDatos(distrito: Distrito)` recibe el objeto completo.
 
 Los ids (`id_distrito`, `id_vivienda`...) pertenecen a la base de datos relacional y solo se usan al guardar y leer. Como `Vivienda` y `Distrito` se referencian entre sí, cada clase define `toJSON()` para poder serializarlas sin referencias circulares (y `Usuario` nunca expone la contraseña).
+[Diagrama UML corregido](docs/img/UML.png)
 
 ---
 
 ## 7. Flujo de trabajo en Git
 
-Ramas, convención de commits y reparto de trabajo en [`docs/git-workflow.md`](docs/git-workflow.md).
+**Ningún commit ni push directo a `main`:** una rama `feature/...` por tarea y Pull Request revisado por otro integrante. Ramas y convención de commits en [`docs/git-workflow.md`](docs/git-workflow.md).
 
 ## 8. Problemas conocidos
 
