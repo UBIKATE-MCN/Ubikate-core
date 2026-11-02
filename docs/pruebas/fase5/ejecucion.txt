@@ -1,0 +1,53 @@
+UBIKATE | Grupo 8 | 2026-11-01T23:50:50.701Z
+Node v24.21.0 | MariaDB 10.4.32-MariaDB | http://127.0.0.1:62224
+
+[CP-01] Estado de la API
+GET /api/health
+HTTP 200 | application/json; charset=utf-8
+{"status":"ok","service":"ubikate-core","timestamp":"2026-11-01T23:50:50.725Z"}
+Estado: Conforme
+
+[CP-02] Ruta desconocida
+GET /api/qa-inexistente
+HTTP 404 | application/json; charset=utf-8
+{"status":"error","message":"Ruta no encontrada"}
+Estado: Conforme
+
+[CP-03] Conexión con MariaDB
+GET /api/health/db
+HTTP 200 | application/json; charset=utf-8
+{"status":"ok","database":"connected"}
+Estado: Conforme
+
+[CP-05] Validación de la contraseña
+Usuario.login() | instancia en memoria
+Clave correcta -> true
+Clave incorrecta -> true
+Clave vacía -> true
+Estado: No conforme
+
+[CP-06] Filtro por distrito y eje
+Distritos 901 y 902 | 8 indicadores sintéticos
+GET /api/distritos/901/indicadores?eje=…
+seguridad -> 404 {"status":"error","message":"Ruta no encontrada"}
+salud -> 404 {"status":"error","message":"Ruta no encontrada"}
+movilidad -> 404 {"status":"error","message":"Ruta no encontrada"}
+servicios -> 404 {"status":"error","message":"Ruta no encontrada"}
+Estado: Bloqueado
+
+[CP-07] Integridad de la vivienda
+INSERT con distrito 901 -> 1 fila
+INSERT con distrito 999 -> ER_NO_REFERENCED_ROW_2
+Filas antes de ROLLBACK: 1
+Filas después de ROLLBACK: 0
+Estado: Conforme
+
+[CP-04] Caída de la base de datos
+MariaDB temporal detenida
+GET /api/health/db
+HTTP 503 | application/json; charset=utf-8
+{"status":"error","database":"unreachable","code":"ECONNREFUSED"}
+GET /api/health -> 200 ok
+Estado: Conforme
+
+RESULTADO | 5 conformes | 1 no conformes | 1 bloqueados
