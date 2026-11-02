@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="0">
+    <mxGraphModel dx="1571" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="id2" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=24;" value="&lt;b&gt;UBIKATE · Técnica 2: Apuntes de testeo (Matriz de feedback)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="900" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="id3" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;" value="Objetivo: ordenar todo lo recogido en las pruebas con usuarios y convertirlo en mejoras antes de programar la interfaz" vertex="1">
+          <mxGeometry height="30" width="1000" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="id4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="Inicio: observaciones de la Técnica 1" vertex="1">
+          <mxGeometry height="70" width="140" x="40" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="id5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;1. Clasificar&lt;/b&gt;&lt;br&gt;Cada observación va a uno de los 4 cuadrantes de la matriz" vertex="1">
+          <mxGeometry height="90" width="170" x="220" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="id6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;2. Priorizar&lt;/b&gt;&lt;br&gt;Agrupamos lo repetido y lo ordenamos por frecuencia y gravedad" vertex="1">
+          <mxGeometry height="90" width="170" x="430" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="id7" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="¿Se repite o es grave?" vertex="1">
+          <mxGeometry height="120" width="170" x="640" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="id8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;3. Registrar&lt;/b&gt;&lt;br&gt;Creamos una tarea (issue) en GitHub para cada mejora" vertex="1">
+          <mxGeometry height="90" width="170" x="860" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="id9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;4. Aplicar&lt;/b&gt;&lt;br&gt;Hacemos el cambio en los mockups de Figma" vertex="1">
+          <mxGeometry height="90" width="170" x="1070" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="id10" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="¿Es un cambio importante?" vertex="1">
+          <mxGeometry height="120" width="170" x="1280" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="id11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" value="Se guarda como idea para más adelante" vertex="1">
+          <mxGeometry height="70" width="170" x="640" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="id12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="Fin: lista de mejoras priorizada" vertex="1">
+          <mxGeometry height="70" width="170" x="1280" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="id13" edge="1" parent="1" source="id4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id14" edge="1" parent="1" source="id5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id15" edge="1" parent="1" source="id6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id16" edge="1" parent="1" source="id7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id8" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id17" edge="1" parent="1" source="id7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id11" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id18" edge="1" parent="1" source="id8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id19" edge="1" parent="1" source="id9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id20" edge="1" parent="1" source="id10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="id4" value="Sí, nueva prueba con usuarios (Técnica 1)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1365" y="130" />
+              <mxPoint x="110" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="id21" edge="1" parent="1" source="id10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id12" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id22" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;" value="&lt;b&gt;Matriz de feedback (4 cuadrantes)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="500" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="id23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;¿Qué funciona?&lt;/b&gt;&lt;br&gt;Lo que los usuarios usan sin problema y valoran" vertex="1">
+          <mxGeometry height="70" width="340" x="40" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;b&gt;¿Qué se puede mejorar?&lt;/b&gt;&lt;br&gt;Errores, dudas al navegar y cosas que no se entienden" vertex="1">
+          <mxGeometry height="70" width="340" x="390" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;¿Qué preguntas nos hacen?&lt;/b&gt;&lt;br&gt;Ej.: de dónde salen los datos o cómo se calcula cada eje" vertex="1">
+          <mxGeometry height="70" width="340" x="40" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="id26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;¿Qué ideas nos proponen?&lt;/b&gt;&lt;br&gt;Ej.: nuevos indicadores, otras zonas o guardar barrios favoritos" vertex="1">
+          <mxGeometry height="70" width="340" x="390" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="id27" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;" value="&lt;b&gt;Elementos que intervienen&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="500" x="760" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="id28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Equipo&lt;/b&gt;&lt;br&gt;Los miembros del grupo" vertex="1">
+          <mxGeometry height="70" width="215" x="760" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Observaciones&lt;/b&gt;&lt;br&gt;Plantillas de la Técnica 1" vertex="1">
+          <mxGeometry height="70" width="215" x="985" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Matriz&lt;/b&gt;&lt;br&gt;Panel con los 4 cuadrantes" vertex="1">
+          <mxGeometry height="70" width="215" x="1210" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;GitHub&lt;/b&gt;&lt;br&gt;Tareas (issues) de cada mejora" vertex="1">
+          <mxGeometry height="70" width="215" x="760" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="id32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Figma&lt;/b&gt;&lt;br&gt;Mockups de UBIKATE" vertex="1">
+          <mxGeometry height="70" width="215" x="985" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="id33" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;" value="&lt;b&gt;Validaciones y resultado esperado&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="500" x="40" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="id34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;align=left;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Qué validamos&lt;/b&gt;&lt;br&gt;1. Que cada observación está en el cuadrante correcto&lt;br&gt;2. Que las mejoras están ordenadas por frecuencia y gravedad&lt;br&gt;3. Que cada mejora elegida tiene su tarea en GitHub&lt;br&gt;4. Que los cambios importantes se vuelven a probar con usuarios" vertex="1">
+          <mxGeometry height="130" width="800" x="40" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="id35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;align=left;spacingLeft=10;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Resultado esperado&lt;/b&gt;&lt;br&gt;Una lista de mejoras priorizada, basada en lo que han dicho y hecho los usuarios, registrada en GitHub y aplicada en Figma, que sirve de guía para programar la interfaz de UBIKATE." vertex="1">
+          <mxGeometry height="130" width="580" x="870" y="685" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
