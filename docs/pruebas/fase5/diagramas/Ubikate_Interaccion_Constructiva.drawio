@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="0">
+    <mxGraphModel dx="1458" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="id2" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=24;" value="&lt;b&gt;UBIKATE · Técnica 1: Interacción Constructiva&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="800" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="id3" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;" value="Objetivo: observar cómo usan el prototipo de Figma personas reales mientras dicen en voz alta lo que piensan" vertex="1">
+          <mxGeometry height="30" width="900" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="id4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="Inicio" vertex="1">
+          <mxGeometry height="60" width="110" x="40" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="id5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;1. Preparación&lt;/b&gt;&lt;br&gt;Prototipo de Figma, plantilla y guion. Mínimo 5 participantes" vertex="1">
+          <mxGeometry height="90" width="170" x="190" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="id6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;2. Sesión&lt;/b&gt;&lt;br&gt;El participante hace una actividad pensando en voz alta" vertex="1">
+          <mxGeometry height="90" width="170" x="400" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="id7" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="¿Completa la actividad sin ayuda?" vertex="1">
+          <mxGeometry height="120" width="170" x="610" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="id8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;3. Registro&lt;/b&gt;&lt;br&gt;Anotamos interacciones, sorpresas y comentarios en la plantilla" vertex="1">
+          <mxGeometry height="90" width="170" x="830" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="id9" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="¿Quedan actividades?" vertex="1">
+          <mxGeometry height="120" width="170" x="1040" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="id10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;" value="Se anota como error o bloqueo" vertex="1">
+          <mxGeometry height="70" width="170" x="610" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="id11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;4. Cierre&lt;/b&gt;&lt;br&gt;Pregunta final sobre la experiencia" vertex="1">
+          <mxGeometry height="70" width="170" x="1040" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="id12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="Fin: pasa a la Técnica 2 (Apuntes de testeo)" vertex="1">
+          <mxGeometry height="60" width="170" x="1250" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="id13" edge="1" parent="1" source="id4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id14" edge="1" parent="1" source="id5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id15" edge="1" parent="1" source="id6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id16" edge="1" parent="1" source="id7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id8" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id17" edge="1" parent="1" source="id7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id10" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id18" edge="1" parent="1" source="id10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id19" edge="1" parent="1" source="id8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id20" edge="1" parent="1" source="id9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="id6" value="Sí, siguiente actividad">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="130" />
+              <mxPoint x="485" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="id21" edge="1" parent="1" source="id9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id11" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id22" edge="1" parent="1" source="id11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontStyle=1;" target="id12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="id23" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;" value="&lt;b&gt;Elementos que intervienen&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="500" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="id24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Participantes&lt;/b&gt;&lt;br&gt;Ciudadanos, gestores municipales e inversores" vertex="1">
+          <mxGeometry height="60" width="256" x="40" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Moderador&lt;/b&gt;&lt;br&gt;Explica las actividades sin ayudar" vertex="1">
+          <mxGeometry height="60" width="256" x="316" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Observador&lt;/b&gt;&lt;br&gt;Toma notas en la plantilla" vertex="1">
+          <mxGeometry height="60" width="256" x="592" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Prototipo&lt;/b&gt;&lt;br&gt;Mockups de UBIKATE en Figma" vertex="1">
+          <mxGeometry height="60" width="256" x="868" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffffff;strokeColor=#6c8ebf;" value="&lt;b&gt;Plantilla&lt;/b&gt;&lt;br&gt;Interacción Constructiva (5 columnas)" vertex="1">
+          <mxGeometry height="60" width="256" x="1144" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="id29" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;" value="&lt;b&gt;Validaciones y resultado esperado&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="500" x="40" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="id30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;align=left;spacingLeft=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Qué validamos en cada actividad&lt;/b&gt;&lt;br&gt;1. Que se entiende para qué sirve la web a primera vista&lt;br&gt;2. Que los filtros de los 4 ejes se usan sin ayuda (ej. Seguridad en Chamberí)&lt;br&gt;3. Que se llega a la ficha de un distrito&lt;br&gt;4. Que el comparador de zonas se entiende&lt;br&gt;5. Que los colores y las puntuaciones no se malinterpretan" vertex="1">
+          <mxGeometry height="150" width="800" x="40" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="id31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;align=left;spacingLeft=10;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;Resultado esperado&lt;/b&gt;&lt;br&gt;El participante completa las 5 actividades sin ayuda, entiende que UBIKATE puntúa los barrios para ayudar a elegir dónde vivir y todo lo observado queda en la plantilla para pasarlo a la Técnica 2." vertex="1">
+          <mxGeometry height="150" width="550" x="870" y="605" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
